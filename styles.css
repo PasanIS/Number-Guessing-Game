@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientShift 6s ease infinite;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/*----Glassmorphism for fun effect----*/
+.glass-card {
+    width: 350px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.btn-primary {
+    background-color: #ffd700;
+    border: none;
+    color: black;
+}
+
+.btn-secondary {
+    background-color: #8a2be2;
+    border: none;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+}
+
+.fa-solid {
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+#msg {
+    font-size: 1.2em;
+    font-family: 'Fredoka One', cursive;
+    color: #347b3c;
+}
